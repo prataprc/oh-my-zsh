@@ -80,6 +80,17 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# {{{ Setup variable for this script.
+PLATFORM='unknown'
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+    PLATFORM='linux'
+elif [[ "$unamestr" == 'Darwin' ]]; then
+    PLATFORM='Darwin'
+fi
+export PLATFORM
+# }}}
+
 bindkey -v # Enable vim mode
 
 DEVGO=$HOME/devgo
