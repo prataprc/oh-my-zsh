@@ -100,8 +100,10 @@ if [ "$MYZSHRC" != "finished" ]; then
     export GOPATH=$DEVGO:$GOPATH
     if [[ $PLATFORM == 'Darwin' ]] then
         export PATH=/usr/local/sbin:/usr/local/opt/ruby/bin:/usr/local/share/npm/bin:$PATH
+        export GOROOT=/usr/local/Cellar/go/1.3/libexec/
     fi
     export PATH=.:$DEVGO/bin:$ERL_TOP/bin:$HOME/bin:$NSLIB/bin:$HOME/.cabal/bin:/usr/local/bin:$PATH
+    export PATH=/usr/local/go/bin:$PATH
 fi
 
 # {{{ aliases directory listing
