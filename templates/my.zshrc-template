@@ -155,6 +155,9 @@ alias nsut='erl -boot $NSLIB/releases/netscale -config $NSLIB/_root/test.config 
 alias tmux='TERM=xterm-256color tmux -2 -u'
 alias fmtall='find ./ -name "*.go" -exec gofmt -w {} \;'
 alias vim="~/myworld/dotfiles/bin/vi"
+alias vi="~/myworld/dotfiles/bin/vi"
+alias clj="lein exec"
+alias clean2i="rm beer-sample_* default_* bin/{indexer,projector} projector/main/projector indexer/main/indexer"
 # }}}
 
 # {{{ aliases for changing directories
