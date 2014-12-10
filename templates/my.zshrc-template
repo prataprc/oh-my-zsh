@@ -94,11 +94,13 @@ export PLATFORM
 bindkey -v # Enable vim mode
 
 DEVGO=$HOME/devgo
+unsetopt nomatch
 cdpath=( $cdpath ~ ~/dev ~/notes ~/devgit ~/devcb ~/myworld
          $DEVGO/src/github.com/*/
          $DEVGO/src/code.google.com/*/
          $DEVGO/src/code.google.com/p/*
          $DEVGO/src/bitbucket.org/*/ )
+setopt nomatch
 
 if [ "$MYZSHRC" != "finished" ]; then
     export NSLIB=$HOME/devgit/netscale
@@ -157,7 +159,7 @@ alias fmtall='find ./ -name "*.go" -exec gofmt -w {} \;'
 alias vim="~/myworld/dotfiles/bin/vi"
 alias vi="~/myworld/dotfiles/bin/vi"
 alias clj="lein exec"
-alias clean2i="rm beer-sample_* default_* bin/{indexer,projector} projector/main/projector indexer/main/indexer"
+alias clean2i="rm beer-sample_* default_* bin/{indexer,projector} projector/main/projector indexer/main/indexer meta"
 # }}}
 
 # {{{ aliases for changing directories
