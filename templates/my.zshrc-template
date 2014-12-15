@@ -102,9 +102,9 @@ cdpath=( $cdpath ~ ~/dev ~/notes ~/devgit ~/devcb ~/myworld
          $DEVGO/src/bitbucket.org/*/ )
 setopt nomatch
 
-export C_INCLUDE_PATH=$HOME/oss/forestdb/include
-export CGO_CFLAGS='-I/Users/prataprc/oss/forestdb/include/'
-export CGO_LDFLAGS='-L/Users/prataprc/oss/forestdb/install/lib'
+# export C_INCLUDE_PATH=$HOME/oss/forestdb/include
+# export CGO_CFLAGS='-I/Users/prataprc/oss/forestdb/include/'
+# export CGO_LDFLAGS='-L/Users/prataprc/oss/forestdb/install/lib'
 
 if [ "$MYZSHRC" != "finished" ]; then
     export NSLIB=$HOME/devgit/netscale
@@ -177,6 +177,10 @@ alias 6='cd +6'
 alias 7='cd +7'
 alias 8='cd +8'
 alias 9='cd +9'
+# }}}
+
+# {{{ ulimits
+ulimit -n 10240
 # }}}
 
 export MYZSHRC=finished
