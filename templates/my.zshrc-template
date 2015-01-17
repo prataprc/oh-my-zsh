@@ -163,7 +163,7 @@ alias fmtall='find ./ -name "*.go" -exec gofmt -w {} \;'
 alias vim="~/myworld/dotfiles/bin/vi"
 alias vi="~/myworld/dotfiles/bin/vi"
 alias clj="lein exec"
-alias clean2i="rm beer-sample_* default_* bin/{indexer,projector} projector/main/projector indexer/main/indexer meta"
+alias clean2i="rm bin/{indexer,projector} projector/main/projector indexer/main/indexer meta"
 # }}}
 
 # {{{ aliases for changing directories
