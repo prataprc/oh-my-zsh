@@ -103,6 +103,8 @@ cdpath=( $cdpath ~ ~/dev ~/notes ~/devgit ~/devcb ~/myworld
          $DEVGO/src/bitbucket.org/*/ )
 setopt nomatch
 
+ulimit -c unlimited
+
 # export C_INCLUDE_PATH=$HOME/oss/forestdb/include
 # export CGO_CFLAGS='-I/Users/prataprc/oss/forestdb/include/'
 # export CGO_LDFLAGS='-L/Users/prataprc/oss/forestdb/install/lib'
