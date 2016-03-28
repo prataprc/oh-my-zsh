@@ -86,6 +86,8 @@ for plugin ($plugins); do
   fi
 done
 
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
+
 # Load all of your custom configurations from custom/
 for config_file ($ZSH_CUSTOM/*.zsh(N)); do
   source $config_file
