@@ -104,7 +104,7 @@ ulimit -c unlimited
 # export CGO_LDFLAGS='-L/Users/prataprc/oss/forestdb/install/lib'
 
 if [[ $PLATFORM == 'Darwin' ]] then
-    export GOROOT=/usr/local/Cellar/go/1.4/libexec/
+    export GOROOT=/usr/local/Cellar/go/1.6/libexec/
 fi
 if [ "$MYZSHRC" != "finished" ]; then
     export NSLIB=$HOME/devgit/netscale
@@ -114,7 +114,7 @@ if [ "$MYZSHRC" != "finished" ]; then
     export STARDICT_DATA_DIR=$HOME/.stardict/dic
     export SDCV_HISTSIZE=10000
     export GOBIN=$DEVGO/bin
-    export GOPATH=$DEVGO:$GOPATH
+    export GOPATH=$DEVGO
     if [[ $PLATFORM == 'Darwin' ]] then
         export PATH=/usr/local/sbin:/usr/local/share/npm/bin:$PATH
     fi
