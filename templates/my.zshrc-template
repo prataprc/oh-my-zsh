@@ -106,6 +106,9 @@ ulimit -c unlimited
 if [[ $PLATFORM == 'Darwin' ]] then
     export GOROOT=/usr/local/Cellar/go/1.6/libexec/
 fi
+if [[ $PLATFORM == 'Linux' ]] then
+    export GOROOT=/usr/local/go
+fi
 if [ "$MYZSHRC" != "finished" ]; then
     export NSLIB=$HOME/devgit/netscale
     export ERL_LIBS=$HOME/devgit/netscale:$HOME/devgit/textmode
