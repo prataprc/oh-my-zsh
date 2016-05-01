@@ -103,6 +103,11 @@ ulimit -c unlimited
 # export CGO_CFLAGS='-I/Users/prataprc/oss/forestdb/include/'
 # export CGO_LDFLAGS='-L/Users/prataprc/oss/forestdb/install/lib'
 
+# python virtual environment
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 if [[ $PLATFORM == 'Darwin' ]] then
     export GOROOT=/usr/local/Cellar/go/1.6/libexec/
 fi
