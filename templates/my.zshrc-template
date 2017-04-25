@@ -91,7 +91,7 @@ bindkey '^r' history-incremental-search-backward
 
 DEVGO=$HOME/devgo
 unsetopt nomatch
-cdpath=( $cdpath ~ ~/dev ~/notes ~/devgit ~/devcb ~/myworld
+cdpath=( $cdpath ~ ~/dev ~/notes ~/devgit ~/myworld
          $DEVGO/src/github.com/*/
          $DEVGO/src/code.google.com/*/
          $DEVGO/src/code.google.com/p/*
@@ -109,12 +109,6 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-if [[ $PLATFORM == 'Darwin' ]] then
-    export GOROOT=/usr/local/Cellar/go/1.6/libexec/
-fi
-if [[ $PLATFORM == 'Linux' ]] then
-    export GOROOT=/usr/local/go
-fi
 if [ "$MYZSHRC" != "finished" ]; then
     export NSLIB=$HOME/devgit/netscale
     export ERL_LIBS=$HOME/devgit/netscale:$HOME/devgit/textmode
