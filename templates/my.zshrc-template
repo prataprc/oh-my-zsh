@@ -89,7 +89,7 @@ export PLATFORM
 bindkey -v # Enable vim mode
 bindkey '^r' history-incremental-search-backward
 
-DEVGO=$HOME/devgo
+DEVGO=$HOME/myworld/devgo
 unsetopt nomatch
 cdpath=( $cdpath ~ ~/dev ~/notes ~/devgit ~/myworld
          $DEVGO/src/github.com/*/
