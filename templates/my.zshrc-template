@@ -105,14 +105,13 @@ ulimit -c unlimited
 # export CGO_LDFLAGS='-L/Users/prataprc/oss/forestdb/install/lib'
 
 # python virtual environment
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# export PATH="$HOME/.pyenv/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 if [ "$MYZSHRC" != "finished" ]; then
     export NSLIB=$HOME/devgit/netscale
     export ERL_LIBS=$HOME/devgit/netscale:$HOME/devgit/textmode
-    export GREP_OPTIONS='--color=auto -E'
     export ERL_TOP=/usr/lib/erlang #TODO: should be mac smart
     export STARDICT_DATA_DIR=$HOME/.stardict/dic
     export SDCV_HISTSIZE=10000
@@ -148,6 +147,7 @@ alias lS='ls -lSh'
 alias lrS='ls -lrSh'
 alias llS='ls -lS'
 alias llrS='ls -lrS'
+alias grep='grep --color=auto -E'
 # }}}
 
 # {{{ aliases for common commands
