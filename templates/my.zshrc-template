@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# path for rust programs.
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -187,3 +190,6 @@ ulimit -n 10240
 # }}}
 
 export MYZSHRC=finished
+
+unsetopt auto_cd
+export RUST_BACKTRACE=1
