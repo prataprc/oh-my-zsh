@@ -186,7 +186,7 @@ alias 9='cd +9'
 # }}}
 
 # {{{ ulimits
-ulimit -n 10240
+ulimit -n 1000
 # }}}
 
 export MYZSHRC=finished
