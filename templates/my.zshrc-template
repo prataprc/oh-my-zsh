@@ -94,7 +94,7 @@ bindkey '^r' history-incremental-search-backward
 
 DEVGO=$HOME/myworld/devgo
 unsetopt nomatch
-cdpath=( $cdpath ~ ~/dev ~/notes ~/devgit ~/myworld
+cdpath=( $cdpath ~ ~/dev ~/notes ~/devgit ~/devrs ~/devrs/bootstrap ~/myworld
          $DEVGO/src/github.com/*/
          $DEVGO/src/code.google.com/*/
          $DEVGO/src/code.google.com/p/*
@@ -150,7 +150,8 @@ alias lS='ls -lSh'
 alias lrS='ls -lrSh'
 alias llS='ls -lS'
 alias llrS='ls -lrS'
-alias grep='grep --color=auto -E'
+alias grep='git grep --color=auto -E'
+alias gr='grep --color=auto -E'
 # }}}
 
 # {{{ aliases for common commands
@@ -183,6 +184,11 @@ alias 6='cd +6'
 alias 7='cd +7'
 alias 8='cd +8'
 alias 9='cd +9'
+
+if [[ $PLATFORM == 'Linux' ]] then
+	alias open='xdg-open'
+fi
+
 # }}}
 
 # {{{ ulimits
