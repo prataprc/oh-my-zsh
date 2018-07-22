@@ -198,4 +198,4 @@ ulimit -n 1000
 export MYZSHRC=finished
 
 unsetopt auto_cd
-export RUST_BACKTRACE=1
+export RUST_BACKTRACE=full
