@@ -94,7 +94,7 @@ bindkey '^r' history-incremental-search-backward
 
 DEVGO=$HOME/myworld/devgo
 unsetopt nomatch
-cdpath=( $cdpath ~ ~/dev ~/notes ~/devgit ~/devrs ~/devrs/bootstrap ~/myworld
+cdpath=( $cdpath ~ ~/notes ~/devgit ~/devrs ~/devrs/bootstrap ~/myworld
          $DEVGO/src/github.com/*/
          $DEVGO/src/code.google.com/*/
          $DEVGO/src/code.google.com/p/*
