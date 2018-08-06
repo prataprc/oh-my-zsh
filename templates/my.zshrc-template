@@ -199,3 +199,4 @@ export MYZSHRC=finished
 
 unsetopt auto_cd
 export RUST_BACKTRACE=full
+export SHELL=/usr/bin/zsh
