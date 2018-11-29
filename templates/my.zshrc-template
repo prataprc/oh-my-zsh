@@ -150,8 +150,7 @@ alias lS='ls -lSh'
 alias lrS='ls -lrSh'
 alias llS='ls -lS'
 alias llrS='ls -lrS'
-alias grep='git grep --color=auto -E'
-alias gr='grep --color=auto -E'
+alias gr='git grep --color=auto -E'
 # }}}
 
 # {{{ aliases for common commands
@@ -199,4 +198,4 @@ export MYZSHRC=finished
 
 unsetopt auto_cd
 export RUST_BACKTRACE=full
-export SHELL=/usr/bin/zsh
+# export SHELL=/usr/bin/zsh
