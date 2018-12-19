@@ -170,6 +170,7 @@ alias vi="~/myworld/dotfiles/bin/vi"
 alias clj="lein exec"
 alias clean2i="rm bin/{indexer,projector} projector/main/projector indexer/main/indexer meta"
 alias trgdate="date +%Y-%m-%d-%H:%M:%S"
+alias cargo --color always
 # }}}
 
 # {{{ aliases for changing directories
