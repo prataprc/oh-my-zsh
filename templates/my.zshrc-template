@@ -200,4 +200,5 @@ export MYZSHRC=finished
 
 unsetopt auto_cd
 export RUST_BACKTRACE=full
+export RUSTFLAGS=-g
 # export SHELL=/usr/bin/zsh
