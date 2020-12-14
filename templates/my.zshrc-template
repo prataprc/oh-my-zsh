@@ -173,7 +173,7 @@ alias clean2i="rm bin/{indexer,projector} projector/main/projector indexer/main/
 alias trgdate="date +%Y-%m-%d-%H:%M:%S"
 alias cargo --color always
 # --enable-raid  --enable-smart --enable-history --graph-path 
-alias glances="glances --sparkline --process-short-name --enable-irq --meangpu --diskio-iops --diskio-show-ramfs --fs-free-space --export graph --export-graph-path /home/prataprc/glances-graph"
+alias glances="glances --process-short-name --enable-irq --meangpu --diskio-iops --diskio-show-ramfs --fs-free-space --export graph --export-graph-path /home/prataprc/glances-graph"
 # }}}
 
 # {{{ aliases for changing directories
