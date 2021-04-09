@@ -203,4 +203,11 @@ export MYZSHRC=finished
 unsetopt auto_cd
 export RUST_BACKTRACE=full
 export RUSTFLAGS=-g
+
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
+
 # export SHELL=/usr/bin/zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
